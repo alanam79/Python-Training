@@ -1,0 +1,213 @@
+# print("Welcome to the rollercoaster!")
+# height = int(input("What is your height in cm? "))
+
+# if height >= 120:
+#   print("You can ride the rollercoaster!")
+# else:
+#   print("You can't ride the rollercoaster!")
+
+# Check if number is odd or even
+# Which number do you want to check?
+# number = int(input())
+
+# If the number can be divided by 2 with 0 remainder.
+# if number % 2 == 0:
+#   print("This is an even number.")
+# # Otherwise (number cannot be divided by 2 with 0 remainder).
+# else:
+#   print("This is an odd number.")
+
+# Nested if / else / elif Statements
+# print("Welcome to the rollercoaster!")
+# height = int(input("What is your height in cm? "))
+
+# if height >= 120:
+#   print("You can ride the rollercoaster!")
+#   age = int(input("What is your age?"))
+#   if age < 12:
+#     print("Please pay $5.00")
+#   elif age <= 18: # checks the first if statement if false, it moves here to check if they are 18 or under
+#     print("Please pay $7.00")
+#   else:
+#     print("Please pay $12.00")
+# else:
+#   print("You can't ride the rollercoaster!")
+
+# Excercise 8.1 BMI 2.0
+# Enter your height in meters e.g., 1.55
+# height = float(input())
+# Enter your weight in kilograms e.g., 72
+# weight = int(input())
+
+# bmi = weight  / height**2
+
+# if bmi < 18.5:
+#   print(f"Your BMI is {bmi}, you are underweight")
+# elif bmi < 25: 
+#   print(f"Your BMI is {bmi}, you have a normal weight.")
+# elif bmi < 30: 
+#   print(f"Your BMI is {bmi}, you are slightly overweight.")
+# elif bmi < 35: 
+#   print(f"Your BMI is {bmi}, you are obese.")
+# else:
+# print(f"Your BMI is {bmi}, you are clinically obese.")
+
+# Excercise 10.1 Leap Year
+# Teach example:
+# year = int(input())
+# if year % 4 == 0: #if no goes to bottom else statement and ends
+#   if year % 100 == 0: # determining if the year is divisable by 4 and 100, if no, then goes to second else statement and ends
+#     if year % 400 == 0: # determining if the year is divisable by 4, 100, and 400, if yes, then a leap year
+#       print("Leap year.")
+#     else:
+#       print("Not leap year.")
+#   else:
+#     print("Leap year.")
+# else:
+#   print("Not leap year")
+
+# My example:
+# year = int(input())
+
+# if (year % 400 == 0) and (year % 100 == 0):
+#   print("Leap year")
+
+# elif (year % 4 == 0) and (year % 100 != 0):
+#    print("Leap year")
+
+# else:
+#   print("Not leap year")
+
+# Multiple if satements in succession
+# print("Welcome to the rollercoaster!")
+# height = int(input("What is your height in cm? "))
+# bill = 0
+
+# if height >= 120:
+#   print("You can ride the rollercoaster!")
+#   age = int(input("What is your age?"))
+#   if age < 12:
+#     bill = 5
+#     print("Child tickets are $5.00")
+#   elif age <= 18: # checks the first if statement if false, it moves here to check if they are 18 or under
+#     bill = 7
+#     print("Youth tickets are $7.00")
+#   else:
+#     bill = 12
+#     print("Adult tickets are $12.00")
+
+#   wants_photo = input("Do you want a photo taken? Y or N? ")
+#   if wants_photo == "Y" or "y":
+#    # Add $3 to their bill
+#     bill += 3 # is the same as saying this: bill = bill + 3
+
+#   print(f"Your final bill is ${bill}") # not else statement needed, if user says no, then nothing is needed
+
+# else:
+#   print("You can't ride the rollercoaster!")
+
+# Excercise 10.2 Pizza Order Practice
+# print("Thank you for choosing Python Pizza Deliveries!")
+# size = input() # What size pizza do you want? S, M, or L
+# add_pepperoni = input() # Do you want pepperoni? Y or N
+# extra_cheese = input() # Do you want extra cheese? Y or N
+
+# bill = 0
+
+# if size == "S":
+#   bill = 15
+#   if add_pepperoni == "Y":
+#     bill += 2
+
+# elif size == "M":
+#   bill = 20
+#   if add_pepperoni == "Y":
+#     bill += 3
+
+# else:
+#   bill = 25
+#   if add_pepperoni == "Y":
+#     bill += 3
+
+# could have also used below code block for the pepperoni
+# if add_pepperoni == "Y"
+#   if size == "S"
+#     bill += 2
+#   else:
+#     bill += 3
+
+# if extra_cheese == "Y":
+#   bill += 1
+
+# print(f"Your final bill is: ${bill}.")
+
+# Logical Operators
+# print("Welcome to the rollercoaster!")
+# height = int(input("What is your height in cm? "))
+# bill = 0
+
+# if height >= 120:
+#   print("You can ride the rollercoaster!")
+#   age = int(input("What is your age?"))
+#   if age < 12:
+#     bill = 5
+#     print("Child tickets are $5.00")
+#   elif age <= 18: # checks the first if statement if false, it moves here to check if they are 18 or under
+#     bill = 7
+#     print("Youth tickets are $7.00")
+#   elif age >= 45 and age <= 55:
+#     print("Everything is going to be ok. Have a free ride on us!")
+#   else:
+#     bill = 12
+#     print("Adult tickets are $12.00")
+
+#   wants_photo = input("Do you want a photo taken? Y or N? ")
+#   if wants_photo == "Y":
+#    # Add $3 to their bill
+#     bill += 3 # is the same as saying this: bill = bill + 3
+
+#   print(f"Your final bill is ${bill}") # not else statement needed, if user says no, then nothing is needed
+
+# else:
+#   print("You can't ride the rollercoaster!")
+
+
+# Love Calculator Excercise:
+# print("The Love Calculator is calculating your score...")
+# name1 = input() # What is your name?
+# name2 = input() # What is their name?
+# # 🚨 Don't change the code above 👆
+# # Write your code below this line 👇
+
+# #1 Combining names, counting letters and changing all all letters to lowercase
+# combined_names = name1.lower() + name2.lower()
+
+# #2 Sum the counts of the letters in to get the first digit.
+# true_count = 0
+# love_count = 0
+
+# # Count letters for "True" (.count = Return the number of (non-overlapping) occurrences of substring)
+## letter is each character in the strings "true" and "love" as you iterate over them in a loop.
+# for letter in 'true':
+#   true_count += combined_names.count(letter)
+
+# # Count letters for "Love"
+# for letter in 'love':
+#   love_count += combined_names.count(letter)
+
+# #3 Combine Counts - Sum the counts of the letters to get the number for true and then second number for love
+# first_digit = true_count
+# second_digit = love_count
+
+# #4 Forming the Score
+# score = int(str(first_digit) + str(second_digit))
+
+# #5 Conditional Messages:
+# if score < 10 or score > 90:
+#   print(f"Your score is {score}, you go together like coke and mentos.")
+
+# elif 40 <= score <= 50:
+#   print(f"Your score is {score}, you are alright together.")
+
+# else:
+#   print(f"Your score is {score}.")
