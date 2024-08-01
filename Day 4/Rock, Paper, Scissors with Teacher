@@ -61,4 +61,4 @@ else:
         print("You win!")
     elif computer_choice == user_choice:
         print("Its a draw!")
-        quit()
+    quit()
